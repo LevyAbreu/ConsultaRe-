@@ -1,0 +1,178 @@
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 50px;
+    padding: 8px 12px;
+    white-space: nowrap;
+    transition: var(--transition);
+    border-radius: var(--border-radius);
+}
+
+.logo:hover {
+    background: var(--color-bg-card);
+    transform: translateY(-2px);
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.logo:hover .logo-icon {
+    transform: scale(1.05) rotate(5deg);
+    box-shadow: var(--shadow-lg);
+}
+
+.logo .icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    filter: brightness(0) invert(1);
+    transition: var(--transition);
+}
+
+.logo-text {
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+/* Texto "Consulta" - cor primária do texto */
+.logo-text1 {
+    font-weight: 600;
+    color: var(--color-text-primary);
+    letter-spacing: -0.5px;
+}
+
+/* Texto "Re" - gradiente com a cor primária */
+.logo-text2 {
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.5px;
+    position: relative;
+}
+
+/* Efeito de brilho no "Re" */
+.logo-text2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover .logo-text2::after {
+    opacity: 1;
+}
+
+/* Estados do sidebar recolhido */
+.sidebar:not(:hover) .logo {
+    justify-content: center;
+    padding: 8px;
+    gap: 0;
+}
+
+.sidebar:not(:hover) .logo-text {
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+    gap: 0;
+}
+
+.sidebar:not(:hover) .logo-icon {
+    width: 35px;
+    height: 35px;
+    margin: 0;
+}
+
+.sidebar:not(:hover) .logo .icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Quando o sidebar expande (hover) */
+.sidebar:hover .logo {
+    justify-content: flex-start;
+    padding: 8px 12px;
+    gap: 12px;
+}
+
+.sidebar:hover .logo-text {
+    opacity: 1;
+    width: auto;
+    gap: 2px;
+}
+
+.sidebar:hover .logo-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar:hover .logo .icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .logo {
+        justify-content: flex-start;
+        padding: 8px 12px;
+        gap: 12px;
+    }
+    
+    .logo-text {
+        opacity: 1;
+        width: auto;
+        gap: 2px;
+    }
+    
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .logo .icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .sidebar:not(:hover) .logo {
+        justify-content: flex-start;
+        padding: 8px 12px;
+        gap: 12px;
+    }
+    
+    .sidebar:not(:hover) .logo-text {
+        opacity: 1;
+        width: auto;
+        gap: 2px;
+    }
+}

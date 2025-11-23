@@ -1,0 +1,12 @@
+| ID    | Nome do Caso de Uso                   | Atores            | Descrição Resumida                                                     |
+| ----- | ------------------------------------- | ----------------- | ---------------------------------------------------------------------- |
+| CDU01 | Manter Lead                           | Consultor         | Criar, editar e visualizar informações de um lead.                     |
+| CDU02 | Registrar Consulta                    | Consultor         | Inserir dados da consulta e dívidas identificadas.                     |
+| CDU03 | Avançar Etapa para Contrato           | Consultor         | Mudar o lead da etapa Consulta → Contrato.                             |
+| CDU04 | Registrar Dados Contratuais           | Consultor         | Inserir proposta, valores, parcelas e pagamento.                       |
+| CDU05 | Avançar Etapa para Pós-Venda          | Consultor         | Mudar lead da etapa Contrato → Pós-Venda.                              |
+| CDU06 | Registrar Mini-Processos do Pós-Venda | Consultor         | Marcar os 3 checks (atualização, cadastro positivo, conexão bancária). |
+| CDU07 | Finalizar Lead                        | Consultor         | Concluir atendimento após pós-venda completo.                          |
+| CDU08 | Gerenciar Usuários                    | Administrador     | Criar e gerenciar consultores.                                         |
+| CDU09 | Consultar Leads                       | Consultor / Admin | Buscar leads por filtros.                                              |
+| CDU10 | Acessar Histórico do Lead             | Consultor         | Ver evolução das etapas.                                               |

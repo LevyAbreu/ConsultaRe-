@@ -1,0 +1,7 @@
+RN01 — Um Lead sempre possui uma etapa atual
+Valores possíveis: Consulta, Contrato, Pós-Venda, Finalizado.
+RN02 — Um lead só avança para a etapa “Contrato” se a consulta estiver concluída.
+RN03 — Um lead só avança para o pós-venda se o contrato tiver data de pagamento registrada.
+RN04 — O pós-venda só pode ser finalizado quando os 3 mini-processos estiverem marcados.
+RN05 — Dados financeiros só podem ser alterados por usuários com permissão apropriada.
+RN06 — Toda mudança de etapa gera registro de histórico.

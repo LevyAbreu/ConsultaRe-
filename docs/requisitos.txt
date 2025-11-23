@@ -1,0 +1,23 @@
+RF
+
+| ID   | Descrição                                                                          |
+| ---- | ---------------------------------------------------------------------------------- |
+| RF01 | O sistema deve permitir cadastrar leads.                                           |
+| RF02 | O sistema deve registrar a etapa atual do lead.                                    |
+| RF03 | O sistema deve permitir inserir dados da consulta (dívidas encontradas).           |
+| RF04 | O sistema deve permitir inserir dados contratuais (proposta, pagamento, parcelas). |
+| RF05 | O sistema deve permitir registrar os 3 mini-processos do pós-venda.                |
+| RF06 | O sistema deve exibir o perfil completo do cliente com as três fases.              |
+| RF07 | O sistema deve permitir editar dados do lead.                                      |
+| RF08 | O sistema deve registrar histórico das etapas.                                     |
+| RF09 | O sistema deve permitir buscas por nome, CPF e etapa.                              |
+
+RNF
+
+| ID    | Descrição                                                  |
+| ----- | ---------------------------------------------------------- |
+| RNF01 | A aplicação deve ser responsiva.                           |
+| RNF02 | O sistema deve ter autenticação segura.                    |
+| RNF03 | A base de dados deve manter integridade referencial.       |
+| RNF04 | O sistema deve suportar múltiplos consultores simultâneos. |
+| RNF05 | O tempo de carregamento deve ser inferior a 2s.            |

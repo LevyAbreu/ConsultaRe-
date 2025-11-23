@@ -1,0 +1,16 @@
+Sistema ConsultaRe
+ ├── Módulo de Usuários (Auth, Perfil)
+ ├── Módulo de Leads
+ │    ├── Dados pessoais
+ │    ├── Etapa do atendimento
+ │    ├── Histórico
+ │    └── Controle de status
+ ├── Módulo Consulta
+ │    └── Dados da consulta + dívidas
+ ├── Módulo Contrato
+ │    └── Proposta e pagamento
+ ├── Módulo Pós-Venda
+ │    ├── Atualização cadastral
+ │    ├── Cadastro positivo
+ │    └── Conexão bancária
+ └── Módulo de Relatórios

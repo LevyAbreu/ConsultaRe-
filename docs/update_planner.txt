@@ -1,0 +1,46 @@
+add:
+- na esquerda do X de fechar detalhes do cliente, deve ter um lápis, se eu 
+clicar, vai permitir que eu edite os dados do cliente, podendo atualizar 
+qualquer um desses campos(que fazem parte da consulta, contrato e pós venda)
+
+consulta:
+- se tiver cnpj deve aparecer razão social
+- mudar o titulo de "origem do cliente" para "origem da prospecção"
+- aumentar opções[limpa nome, rating, limpa bacem, emprestimo]
+- modificar status[em consulta, em proposta, contratado, pós venda, finalizado]
+
+contrato:
+- finalizado
+
+pós venda:
+- add envio de cartilha;
+- add entrega de resultado
+
+Resumo financeiro:
+- tirar comissão pós venda
+
+
+
+- criar arquivo que faz a análise de tudo recebido, em cima tem um filtro[todos, 
+ultimo ano, mês, dia(o filtro padrão inicial é o Todos)]
+
+
+
+check-list, organograma, planejamento, regras de negócio, requisitos UML[
+    Tabela de casos de uso,
+]
+
+ConsultaRe é um sistema que serve para gerenciar Leads. O usuário insere os dados da consulta 
+do cliente e fica tudo salvo no sistema para ele saber em que etapa do atendimento ele parou 
+para depois retomar na mesma etapa(fase de consulta, fase contratual ou fase de pós venda). 
+No atendimento, o consultor tem a missão de convencer o cliente a fazer uma consulta no seu cpf, 
+se ele aceitar, vai ser feito uma consulta, e identificadas as dividas dele, é essa consulta a primeira 
+etapa do atendimento, a segunda etapa do atendimento é o contrato, depois de a consulta ser realizada, 
+o cliente recebe uma proposta de contrato com o valor, que garante que a empresa vai entrar com o processo 
+juridico para remover sua divida do orgão de proteção ao crédito, de forma a suspender a divida do cliente,
+após essa consulta o usuário insere os dados da contratação(valor da proposta, data que foi pago, quantidade 
+de parcelas e forma de pagamento), isso tudo ficará visivel nos dados do cliente após a inserção, a terceira 
+etapa é o pós-venda, após o cliente receber o resultado do processo, e ter o nome limpo novamente, o 
+consultor tem que fazer 3 miniprocessos com esse cliente(atualização cadastral, cadastro positivo e
+ conexão bancária), no software, terá 3 checks para serem marcados, cada um com o nome referente ao 
+ determinado miniprocesso

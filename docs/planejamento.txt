@@ -1,0 +1,8 @@
+| Etapa            | Entrega                               | Tempo estimado |
+| ---------------- | ------------------------------------- | -------------- |
+| Planejamento     | Requisitos + Casos de uso + Modelagem | 1 semana       |
+| Módulo Consulta  | CRUD + status da etapa 1              | 1 a 2 semanas  |
+| Módulo Contrato  | Inserção de proposta + pagamentos     | 1 a 2 semanas  |
+| Módulo Pós-Venda | Checkboxes dos 3 processos            | 1 semana       |
+| Finalização      | Relatórios + ajustes gerais           | 1 semana       |
+| Testes + Deploy  | Testes + produção                     | 1 semana       |
