@@ -12,12 +12,13 @@ const clientes = [
         nome: "Loren Ipsum Silva",
         cpf: "000.000.000-00",
         cnpj: "",
+        razao_social: "",
         telefone: "(99) 99999-9999",
         origem_cliente: "Instagram",
         servico: "Limpa Nome",
         data_inicio_atendimento: "2025-10-15",
         objetivo: "Comprar um carro",
-        status: "Novo",
+        status: "Em consulta",
         
         // Etapa 1: Consulta
         consulta_realizada: true,
@@ -44,164 +45,52 @@ const clientes = [
         cadastro_positivo_realizado: true,
         atualizacao_cadastral_realizada: true,
         conexao_bancaria_realizada: false,
+        envio_cartilha: false,
+        entrega_resultado: false,
         comissao_pos_venda: 450.00
     }, 
     {
-        id: 1,
-        nome: "Loren Ipsum Silva",
-        cpf: "000.000.000-00",
-        cnpj: "",
-        telefone: "(99) 99999-9999",
-        origem_cliente: "Instagram",
-        servico: "Limpa Nome",
-        data_inicio_atendimento: "2025-10-15",
-        objetivo: "Comprar um carro",
-        status: "Novo",
+        id: 2,
+        nome: "Empresa XYZ Ltda",
+        cpf: "",
+        cnpj: "12.345.678/0001-90",
+        razao_social: "Empresa XYZ Comércio Ltda",
+        telefone: "(99) 88888-8888",
+        origem_cliente: "Site",
+        servico: "Rating",
+        data_inicio_atendimento: "2025-10-18",
+        objetivo: "Melhorar rating para financiamento",
+        status: "Em proposta",
         
         // Etapa 1: Consulta
         consulta_realizada: true,
-        data_consulta: "2025-10-16",
-        data_pagamento_consulta: "2025-10-16",
+        data_consulta: "2025-10-19",
+        data_pagamento_consulta: "2025-10-19",
         valor_consulta: 59.90,
         comissao_consulta: 39.90,
-        data_ligacao_proposta: "2025-10-17",
+        data_ligacao_proposta: "2025-10-20",
         associado_responsavel: "Arianne Abreu",
         proposta_enviada: true,
-        valor_proposta: 1500.00,
+        valor_proposta: 2000.00,
         
         // Etapa 2: Entrada
-        data_pagamento_entrada: "2025-10-20",
-        tipo_pagamento: "parcelado",
-        valor_entrada: 750.00,
+        data_pagamento_entrada: "",
+        tipo_pagamento: "",
+        valor_entrada: 0.00,
         
         // Etapa 3: Resultado
-        data_entrega_resultado: "2025-11-30",
-        descricao_resultado: "Dívidas suspensas e score aumentado em 150 pontos",
-        data_pagamento_final: "2025-12-05",
+        data_entrega_resultado: "",
+        descricao_resultado: "",
+        data_pagamento_final: "",
         
         // Etapa 4: Pós-venda
-        cadastro_positivo_realizado: true,
-        atualizacao_cadastral_realizada: true,
+        cadastro_positivo_realizado: false,
+        atualizacao_cadastral_realizada: false,
         conexao_bancaria_realizada: false,
-        comissao_pos_venda: 450.00
-    }, 
-    {
-        id: 1,
-        nome: "Loren Ipsum Silva",
-        cpf: "000.000.000-00",
-        cnpj: "",
-        telefone: "(99) 99999-9999",
-        origem_cliente: "Instagram",
-        servico: "Limpa Nome",
-        data_inicio_atendimento: "2025-10-15",
-        objetivo: "Comprar um carro",
-        status: "Novo",
-        
-        // Etapa 1: Consulta
-        consulta_realizada: true,
-        data_consulta: "2025-10-16",
-        data_pagamento_consulta: "2025-10-16",
-        valor_consulta: 59.90,
-        comissao_consulta: 39.90,
-        data_ligacao_proposta: "2025-10-17",
-        associado_responsavel: "Arianne Abreu",
-        proposta_enviada: true,
-        valor_proposta: 1500.00,
-        
-        // Etapa 2: Entrada
-        data_pagamento_entrada: "2025-10-20",
-        tipo_pagamento: "parcelado",
-        valor_entrada: 750.00,
-        
-        // Etapa 3: Resultado
-        data_entrega_resultado: "2025-11-30",
-        descricao_resultado: "Dívidas suspensas e score aumentado em 150 pontos",
-        data_pagamento_final: "2025-12-05",
-        
-        // Etapa 4: Pós-venda
-        cadastro_positivo_realizado: true,
-        atualizacao_cadastral_realizada: true,
-        conexao_bancaria_realizada: false,
-        comissao_pos_venda: 450.00
-    }, 
-    {
-        id: 1,
-        nome: "Loren Ipsum Silva",
-        cpf: "000.000.000-00",
-        cnpj: "",
-        telefone: "(99) 99999-9999",
-        origem_cliente: "Instagram",
-        servico: "Limpa Nome",
-        data_inicio_atendimento: "2025-10-15",
-        objetivo: "Comprar um carro",
-        status: "Novo",
-        
-        // Etapa 1: Consulta
-        consulta_realizada: true,
-        data_consulta: "2025-10-16",
-        data_pagamento_consulta: "2025-10-16",
-        valor_consulta: 59.90,
-        comissao_consulta: 39.90,
-        data_ligacao_proposta: "2025-10-17",
-        associado_responsavel: "Arianne Abreu",
-        proposta_enviada: true,
-        valor_proposta: 1500.00,
-        
-        // Etapa 2: Entrada
-        data_pagamento_entrada: "2025-10-20",
-        tipo_pagamento: "parcelado",
-        valor_entrada: 750.00,
-        
-        // Etapa 3: Resultado
-        data_entrega_resultado: "2025-11-30",
-        descricao_resultado: "Dívidas suspensas e score aumentado em 150 pontos",
-        data_pagamento_final: "2025-12-05",
-        
-        // Etapa 4: Pós-venda
-        cadastro_positivo_realizado: true,
-        atualizacao_cadastral_realizada: true,
-        conexao_bancaria_realizada: false,
-        comissao_pos_venda: 450.00
-    }, 
-    {
-        id: 1,
-        nome: "Loren Ipsum Silva",
-        cpf: "000.000.000-00",
-        cnpj: "",
-        telefone: "(99) 99999-9999",
-        origem_cliente: "Instagram",
-        servico: "Limpa Nome",
-        data_inicio_atendimento: "2025-10-15",
-        objetivo: "Comprar um carro",
-        status: "Novo",
-        
-        // Etapa 1: Consulta
-        consulta_realizada: true,
-        data_consulta: "2025-10-16",
-        data_pagamento_consulta: "2025-10-16",
-        valor_consulta: 59.90,
-        comissao_consulta: 39.90,
-        data_ligacao_proposta: "2025-10-17",
-        associado_responsavel: "Arianne Abreu",
-        proposta_enviada: true,
-        valor_proposta: 1500.00,
-        
-        // Etapa 2: Entrada
-        data_pagamento_entrada: "2025-10-20",
-        tipo_pagamento: "parcelado",
-        valor_entrada: 750.00,
-        
-        // Etapa 3: Resultado
-        data_entrega_resultado: "2025-11-30",
-        descricao_resultado: "Dívidas suspensas e score aumentado em 150 pontos",
-        data_pagamento_final: "2025-12-05",
-        
-        // Etapa 4: Pós-venda
-        cadastro_positivo_realizado: true,
-        atualizacao_cadastral_realizada: true,
-        conexao_bancaria_realizada: false,
-        comissao_pos_venda: 450.00
-    }, 
+        envio_cartilha: false,
+        entrega_resultado: false,
+        comissao_pos_venda: 0.00
+    }
 ];
 
 // Variáveis globais
@@ -209,6 +98,8 @@ let clientsGrid, btnAddClient, addClientModal, closeModal, cancelAdd, clientForm
 let profilePanel, clientAvatar, clientName, clientService, clientDetails, sidebar, mainContainer;
 let clientDetailsSidebar, sidebarOverlay, clientDetailsContent;
 let panelActive = false;
+let currentEditingClient = null;
+let isEditingMode = false;
 
 // Função para inicializar elementos DOM
 function initializeDOMElements() {
@@ -293,8 +184,10 @@ function renderClients() {
         card.dataset.id = cliente.id;
         
         let statusClass = 'status-new';
-        if (cliente.status === 'Em Andamento') statusClass = 'status-progress';
-        if (cliente.status === 'Concluído') statusClass = 'status-completed';
+        if (cliente.status === 'Em proposta') statusClass = 'status-progress';
+        if (cliente.status === 'Contratado') statusClass = 'status-progress';
+        if (cliente.status === 'Pós venda') statusClass = 'status-progress';
+        if (cliente.status === 'Finalizado') statusClass = 'status-completed';
         
         card.innerHTML = `
             <div class="card-header">
@@ -345,61 +238,102 @@ function getInitials(name) {
 function showClientDetails(cliente) {
     if (!clientDetailsContent) return;
     
-    const totalComissao = cliente.comissao_consulta + cliente.comissao_pos_venda;
+    currentEditingClient = cliente;
+    isEditingMode = false;
+    
+    const totalComissao = cliente.comissao_consulta + (cliente.comissao_pos_venda || 0);
     const totalRecebido = cliente.valor_consulta + cliente.valor_entrada + (cliente.data_pagamento_final ? cliente.valor_proposta - cliente.valor_entrada : 0);
     
     // Cálculo das comissões
     const comissaoEntrada = cliente.valor_entrada * 0.20; // 20% da entrada
     const comissaoConsulta = cliente.valor_consulta - 30; // Todo o restante acima de R$ 30
     
+    // Mostrar razão social se tiver CNPJ
+    const nomeDisplay = cliente.cnpj && cliente.razao_social ? 
+        `${cliente.nome}<br><small style="color: #666;">${cliente.razao_social}</small>` : 
+        cliente.nome;
+
     clientDetailsContent.innerHTML = `
+    
         <!-- Seção Consulta -->
         <div class="details-section">
             <div class="section-header">Consulta</div>
             <div class="section-content">
                 <div class="detail-row">
                     <span class="detail-label">Nome Completo</span>
-                    <span class="detail-value">${cliente.nome}</span>
+                    <span class="detail-value" id="detail-nome">${nomeDisplay}</span>
+                    <input type="text" class="detail-input" id="edit-nome" value="${cliente.nome}" style="display: none;">
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Telefone</span>
-                    <span class="detail-value">${cliente.telefone}</span>
+                    <span class="detail-value" id="detail-telefone">${cliente.telefone}</span>
+                    <input type="text" class="detail-input" id="edit-telefone" value="${cliente.telefone}" style="display: none;">
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">CPF</span>
-                    <span class="detail-value">${cliente.cpf}</span>
+                    <span class="detail-value" id="detail-cpf">${cliente.cpf}</span>
+                    <input type="text" class="detail-input" id="edit-cpf" value="${cliente.cpf}" style="display: none;">
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">CNPJ</span>
-                    <span class="detail-value ${!cliente.cnpj ? 'none' : ''}">${cliente.cnpj || 'None'}</span>
+                    <span class="detail-value ${!cliente.cnpj ? 'none' : ''}" id="detail-cnpj">${cliente.cnpj || 'None'}</span>
+                    <input type="text" class="detail-input" id="edit-cnpj" value="${cliente.cnpj}" style="display: none;">
                 </div>
                 <div class="detail-row">
-                    <span class="detail-label">Origem do Cliente</span>
-                    <span class="detail-value">${cliente.origem_cliente}</span>
+                    <span class="detail-label">Razão Social</span>
+                    <span class="detail-value ${!cliente.razao_social ? 'none' : ''}" id="detail-razao_social">${cliente.razao_social || 'None'}</span>
+                    <input type="text" class="detail-input" id="edit-razao_social" value="${cliente.razao_social}" style="display: none;">
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Origem da Prospecção</span>
+                    <span class="detail-value" id="detail-origem_cliente">${cliente.origem_cliente}</span>
+                    <select class="detail-input" id="edit-origem_cliente" style="display: none;">
+                        <option value="Instagram" ${cliente.origem_cliente === 'Instagram' ? 'selected' : ''}>Instagram</option>
+                        <option value="Facebook" ${cliente.origem_cliente === 'Facebook' ? 'selected' : ''}>Facebook</option>
+                        <option value="Site" ${cliente.origem_cliente === 'Site' ? 'selected' : ''}>Site</option>
+                        <option value="Indicação" ${cliente.origem_cliente === 'Indicação' ? 'selected' : ''}>Indicação</option>
+                        <option value="Outro" ${cliente.origem_cliente === 'Outro' ? 'selected' : ''}>Outro</option>
+                    </select>
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Serviço</span>
-                    <span class="detail-value">${cliente.servico}</span>
+                    <span class="detail-value" id="detail-servico">${cliente.servico}</span>
+                    <select class="detail-input" id="edit-servico" style="display: none;">
+                        <option value="Limpa Nome" ${cliente.servico === 'Limpa Nome' ? 'selected' : ''}>Limpa Nome</option>
+                        <option value="Rating" ${cliente.servico === 'Rating' ? 'selected' : ''}>Rating</option>
+                        <option value="Limpa Bacen" ${cliente.servico === 'Limpa Bacen' ? 'selected' : ''}>Limpa Bacen</option>
+                        <option value="Empréstimo" ${cliente.servico === 'Empréstimo' ? 'selected' : ''}>Empréstimo</option>
+                    </select>
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Data de Início</span>
-                    <span class="detail-value">${formatDate(cliente.data_inicio_atendimento)}</span>
+                    <span class="detail-value" id="detail-data_inicio_atendimento">${formatDate(cliente.data_inicio_atendimento)}</span>
+                    <input type="date" class="detail-input" id="edit-data_inicio_atendimento" value="${cliente.data_inicio_atendimento}" style="display: none;">
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Status</span>
                     <span class="detail-value">
-                        <span class="status-badge ${cliente.status.toLowerCase().replace(' ', '')}">
+                        <span class="status-badge ${cliente.status.toLowerCase().replace(' ', '')}" id="detail-status">
                             ${cliente.status}
                         </span>
                     </span>
+                    <select class="detail-input" id="edit-status" style="display: none;">
+                        <option value="Em consulta" ${cliente.status === 'Em consulta' ? 'selected' : ''}>Em consulta</option>
+                        <option value="Em proposta" ${cliente.status === 'Em proposta' ? 'selected' : ''}>Em proposta</option>
+                        <option value="Contratado" ${cliente.status === 'Contratado' ? 'selected' : ''}>Contratado</option>
+                        <option value="Pós venda" ${cliente.status === 'Pós venda' ? 'selected' : ''}>Pós venda</option>
+                        <option value="Finalizado" ${cliente.status === 'Finalizado' ? 'selected' : ''}>Finalizado</option>
+                    </select>
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Objetivo</span>
-                    <span class="detail-value">${cliente.objetivo}</span>
+                    <span class="detail-value" id="detail-objetivo">${cliente.objetivo}</span>
+                    <input type="text" class="detail-input" id="edit-objetivo" value="${cliente.objetivo}" style="display: none;">
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Valor da Consulta</span>
-                    <span class="detail-value">R$ ${cliente.valor_consulta.toFixed(2)}</span>
+                    <span class="detail-value" id="detail-valor_consulta">R$ ${cliente.valor_consulta.toFixed(2)}</span>
+                    <input type="number" step="0.01" class="detail-input" id="edit-valor_consulta" value="${cliente.valor_consulta}" style="display: none;">
                 </div>
             </div>
         </div>
@@ -410,19 +344,25 @@ function showClientDetails(cliente) {
             <div class="section-content">
                 <div class="detail-row">
                     <span class="detail-label">Valor da Proposta</span>
-                    <span class="detail-value">R$ ${cliente.valor_proposta.toFixed(2)}</span>
+                    <span class="detail-value" id="detail-valor_proposta">R$ ${cliente.valor_proposta.toFixed(2)}</span>
+                    <input type="number" step="0.01" class="detail-input" id="edit-valor_proposta" value="${cliente.valor_proposta}" style="display: none;">
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Data de Entrada</span>
-                    <span class="detail-value">${cliente.data_pagamento_entrada ? formatDate(cliente.data_pagamento_entrada) : 'Não definida'}</span>
+                    <span class="detail-value" id="detail-data_pagamento_entrada">${cliente.data_pagamento_entrada ? formatDate(cliente.data_pagamento_entrada) : 'Não definida'}</span>
+                    <input type="date" class="detail-input" id="edit-data_pagamento_entrada" value="${cliente.data_pagamento_entrada}" style="display: none;">
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Quantidade de Parcelas</span>
-                    <span class="detail-value">${cliente.tipo_pagamento === 'parcelado' ? '2' : '1'}</span>
+                    <span class="detail-value" id="detail-tipo_pagamento">${cliente.tipo_pagamento === 'parcelado' ? '2' : '1'}</span>
+                    <select class="detail-input" id="edit-tipo_pagamento" style="display: none;">
+                        <option value="parcelado" ${cliente.tipo_pagamento === 'parcelado' ? 'selected' : ''}>Parcelado (2x)</option>
+                        <option value="à vista" ${cliente.tipo_pagamento === 'à vista' ? 'selected' : ''}>À vista</option>
+                    </select>
                 </div>
                 <div class="detail-row">
                     <span class="detail-label">Forma de Pagamento</span>
-                    <span class="detail-value">${cliente.tipo_pagamento || 'Não definida'}</span>
+                    <span class="detail-value" id="detail-tipo_pagamento_text">${cliente.tipo_pagamento || 'Não definida'}</span>
                 </div>
             </div>
         </div>
@@ -443,6 +383,14 @@ function showClientDetails(cliente) {
                     <div class="pos-venda-item ${cliente.conexao_bancaria_realizada ? 'checked' : 'unchecked'}">
                         <i class="fas ${cliente.conexao_bancaria_realizada ? 'fa-check' : 'fa-times'}"></i>
                         <span>Conexão Bancária</span>
+                    </div>
+                    <div class="pos-venda-item ${cliente.envio_cartilha ? 'checked' : 'unchecked'}">
+                        <i class="fas ${cliente.envio_cartilha ? 'fa-check' : 'fa-times'}"></i>
+                        <span>Envio de Cartilha</span>
+                    </div>
+                    <div class="pos-venda-item ${cliente.entrega_resultado ? 'checked' : 'unchecked'}">
+                        <i class="fas ${cliente.entrega_resultado ? 'fa-check' : 'fa-times'}"></i>
+                        <span>Entrega de Resultado</span>
                     </div>
                 </div>
             </div>
@@ -465,18 +413,88 @@ function showClientDetails(cliente) {
                     <span class="detail-value">R$ ${comissaoEntrada.toFixed(2)}</span>
                 </div>
                 <div class="detail-row">
-                    <span class="detail-label">Comissão Pós-Venda</span>
-                    <span class="detail-value">R$ ${cliente.comissao_pos_venda.toFixed(2)}</span>
-                </div>
-                <div class="detail-row">
                     <span class="detail-label">Sua Comissão Total</span>
                     <span class="detail-value" style="font-weight: bold; color: var(--color-primary);">R$ ${totalComissao.toFixed(2)}</span>
                 </div>
             </div>
         </div>
+
+        <div class="edit-actions" id="edit-actions" style="display: none;">
+            <button type="button" class="cancel-btn" onclick="cancelClientEdit()">Cancelar</button>
+            <button type="button" class="save-btn" onclick="saveClientEdit()">Salvar Alterações</button>
+        </div>
     `;
     
     openClientSidebar();
+}
+
+// Função para habilitar edição do cliente
+function enableClientEdit() {
+    isEditingMode = true;
+    
+    // Mostrar inputs e esconder spans
+    document.querySelectorAll('.detail-value').forEach(span => {
+        span.style.display = 'none';
+    });
+    document.querySelectorAll('.detail-input').forEach(input => {
+        input.style.display = 'block';
+    });
+    
+    // Mostrar botões de ação
+    document.getElementById('edit-actions').style.display = 'block';
+    
+    // Atualizar botão de edição
+    const editBtn = document.querySelector('.edit-client-btn');
+    editBtn.innerHTML = '<i class="fas fa-save"></i>';
+    editBtn.onclick = saveClientEdit;
+}
+
+// Função para cancelar edição
+function cancelClientEdit() {
+    isEditingMode = false;
+    
+    // Mostrar spans e esconder inputs
+    document.querySelectorAll('.detail-value').forEach(span => {
+        span.style.display = 'block';
+    });
+    document.querySelectorAll('.detail-input').forEach(input => {
+        input.style.display = 'none';
+    });
+    
+    // Esconder botões de ação
+    document.getElementById('edit-actions').style.display = 'none';
+    
+    // Restaurar botão de edição
+    const editBtn = document.querySelector('.edit-client-btn');
+    editBtn.innerHTML = '<i class="fas fa-edit"></i>';
+    editBtn.onclick = enableClientEdit;
+}
+
+// Função para salvar edição do cliente
+function saveClientEdit() {
+    if (!currentEditingClient) return;
+    
+    // Atualizar dados do cliente
+    currentEditingClient.nome = document.getElementById('edit-nome').value;
+    currentEditingClient.telefone = document.getElementById('edit-telefone').value;
+    currentEditingClient.cpf = document.getElementById('edit-cpf').value;
+    currentEditingClient.cnpj = document.getElementById('edit-cnpj').value;
+    currentEditingClient.razao_social = document.getElementById('edit-razao_social').value;
+    currentEditingClient.origem_cliente = document.getElementById('edit-origem_cliente').value;
+    currentEditingClient.servico = document.getElementById('edit-servico').value;
+    currentEditingClient.data_inicio_atendimento = document.getElementById('edit-data_inicio_atendimento').value;
+    currentEditingClient.status = document.getElementById('edit-status').value;
+    currentEditingClient.objetivo = document.getElementById('edit-objetivo').value;
+    currentEditingClient.valor_consulta = parseFloat(document.getElementById('edit-valor_consulta').value);
+    currentEditingClient.valor_proposta = parseFloat(document.getElementById('edit-valor_proposta').value);
+    currentEditingClient.data_pagamento_entrada = document.getElementById('edit-data_pagamento_entrada').value;
+    currentEditingClient.tipo_pagamento = document.getElementById('edit-tipo_pagamento').value;
+    
+    // Atualizar exibição
+    showClientDetails(currentEditingClient);
+    renderClients();
+    
+    showNotification('Cliente atualizado com sucesso!', 'success');
 }
 
 // Funções para controlar o sidebar
@@ -493,6 +511,8 @@ function closeClientSidebar() {
         clientDetailsSidebar.classList.remove('active');
         sidebarOverlay.classList.remove('active');
         mainContainer.classList.remove('with-client-sidebar');
+        currentEditingClient = null;
+        isEditingMode = false;
     }
 }
 
@@ -517,9 +537,11 @@ function openEditModal(clienteId) {
                 <div class="form-group">
                     <label for="editStatus">Status Geral</label>
                     <select id="editStatus">
-                        <option value="Novo" ${cliente.status === 'Novo' ? 'selected' : ''}>Novo</option>
-                        <option value="Em Andamento" ${cliente.status === 'Em Andamento' ? 'selected' : ''}>Em Andamento</option>
-                        <option value="Concluído" ${cliente.status === 'Concluído' ? 'selected' : ''}>Concluído</option>
+                        <option value="Em consulta" ${cliente.status === 'Em consulta' ? 'selected' : ''}>Em consulta</option>
+                        <option value="Em proposta" ${cliente.status === 'Em proposta' ? 'selected' : ''}>Em proposta</option>
+                        <option value="Contratado" ${cliente.status === 'Contratado' ? 'selected' : ''}>Contratado</option>
+                        <option value="Pós venda" ${cliente.status === 'Pós venda' ? 'selected' : ''}>Pós venda</option>
+                        <option value="Finalizado" ${cliente.status === 'Finalizado' ? 'selected' : ''}>Finalizado</option>
                     </select>
                 </div>
                 
@@ -564,6 +586,14 @@ function openEditModal(clienteId) {
                         <div class="checkbox-item">
                             <input type="checkbox" id="editConexaoBancaria" ${cliente.conexao_bancaria_realizada ? 'checked' : ''}>
                             <label for="editConexaoBancaria">Conexão Bancária</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="editEnvioCartilha" ${cliente.envio_cartilha ? 'checked' : ''}>
+                            <label for="editEnvioCartilha">Envio de Cartilha</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="editEntregaResultado" ${cliente.entrega_resultado ? 'checked' : ''}>
+                            <label for="editEntregaResultado">Entrega de Resultado</label>
                         </div>
                     </div>
                 </div>
@@ -636,6 +666,8 @@ function saveEditChanges(clienteId) {
     cliente.cadastro_positivo_realizado = document.getElementById('editCadastroPositivo').checked;
     cliente.atualizacao_cadastral_realizada = document.getElementById('editAtualizacaoCadastral').checked;
     cliente.conexao_bancaria_realizada = document.getElementById('editConexaoBancaria').checked;
+    cliente.envio_cartilha = document.getElementById('editEnvioCartilha').checked;
+    cliente.entrega_resultado = document.getElementById('editEntregaResultado').checked;
     
     // Atualizar comissões baseadas no progresso
     if (cliente.consulta_realizada && cliente.comissao_consulta === 0) {
@@ -671,6 +703,7 @@ function editClient(id) {
         document.getElementById('nome').value = cliente.nome;
         document.getElementById('cpf').value = cliente.cpf;
         document.getElementById('cnpj').value = cliente.cnpj;
+        document.getElementById('razao_social').value = cliente.razao_social;
         document.getElementById('telefone').value = cliente.telefone;
         document.getElementById('origem_cliente').value = cliente.origem_cliente;
         document.getElementById('servico').value = cliente.servico;
@@ -702,6 +735,7 @@ function updateClient(id) {
             nome: document.getElementById('nome').value,
             cpf: document.getElementById('cpf').value,
             cnpj: document.getElementById('cnpj').value,
+            razao_social: document.getElementById('razao_social').value,
             telefone: document.getElementById('telefone').value,
             origem_cliente: document.getElementById('origem_cliente').value,
             servico: document.getElementById('servico').value,
@@ -745,6 +779,7 @@ function addNewClient(event) {
         nome: document.getElementById('nome').value,
         cpf: document.getElementById('cpf').value,
         cnpj: document.getElementById('cnpj').value,
+        razao_social: document.getElementById('razao_social').value,
         telefone: document.getElementById('telefone').value,
         origem_cliente: document.getElementById('origem_cliente').value,
         servico: document.getElementById('servico').value,
@@ -773,6 +808,8 @@ function addNewClient(event) {
         cadastro_positivo_realizado: false,
         atualizacao_cadastral_realizada: false,
         conexao_bancaria_realizada: false,
+        envio_cartilha: false,
+        entrega_resultado: false,
         comissao_pos_venda: 0.00
     };
     
@@ -784,7 +821,7 @@ function addNewClient(event) {
     // Mostrar notificação de sucesso
     showNotification('Cliente adicionado com sucesso!', 'success');
 }
-
+ 
 // Função para mostrar notificações
 function showNotification(message, type = 'info') {
     // Criar elemento de notificação
@@ -855,8 +892,10 @@ function renderFilteredClients(filteredClients) {
         card.dataset.id = cliente.id;
         
         let statusClass = 'status-new';
-        if (cliente.status === 'Em Andamento') statusClass = 'status-progress';
-        if (cliente.status === 'Concluído') statusClass = 'status-completed';
+        if (cliente.status === 'Em proposta') statusClass = 'status-progress';
+        if (cliente.status === 'Contratado') statusClass = 'status-progress';
+        if (cliente.status === 'Pós venda') statusClass = 'status-progress';
+        if (cliente.status === 'Finalizado') statusClass = 'status-completed';
         
         card.innerHTML = `
             <div class="card-header">
@@ -966,13 +1005,13 @@ function initializeEventListeners() {
             
             switch(filter) {
                 case 'Novos':
-                    filteredClients = clientes.filter(c => c.status === 'Novo');
+                    filteredClients = clientes.filter(c => c.status === 'Em consulta');
                     break;
                 case 'Em Andamento':
-                    filteredClients = clientes.filter(c => c.status === 'Em Andamento');
+                    filteredClients = clientes.filter(c => ['Em proposta', 'Contratado', 'Pós venda'].includes(c.status));
                     break;
                 case 'Concluídos':
-                    filteredClients = clientes.filter(c => c.status === 'Concluído');
+                    filteredClients = clientes.filter(c => c.status === 'Finalizado');
                     break;
                 case 'Arquivados':
                     filteredClients = [];

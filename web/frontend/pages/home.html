@@ -175,9 +175,14 @@
     <div class="client-details-sidebar" id="clientDetailsSidebar">
         <div class="client-details-header">
             <h3>Detalhes do Cliente</h3>
-            <button class="close-sidebar" id="closeClientSidebar">
-                <i class="fas fa-times"></i>
-            </button>
+            <div class="header-actions">
+                <button class="action-btn edit-client-btn" title="Editar cliente" onclick="enableClientEdit()">
+                    <i class="fas fa-edit"></i>
+                </button>
+                <button class="close-sidebar" id="closeClientSidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
         </div>
         <div class="client-details-content" id="clientDetailsContent">
             <!-- O conteúdo será preenchido via JavaScript -->

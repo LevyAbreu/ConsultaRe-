@@ -1,26 +1,3 @@
-add:
-- na esquerda do X de fechar detalhes do cliente, deve ter um lápis, se eu 
-clicar, vai permitir que eu edite os dados do cliente, podendo atualizar 
-qualquer um desses campos(que fazem parte da consulta, contrato e pós venda)
-
-consulta:
-- se tiver cnpj deve aparecer razão social
-- mudar o titulo de "origem do cliente" para "origem da prospecção"
-- aumentar opções[limpa nome, rating, limpa bacem, emprestimo]
-- modificar status[em consulta, em proposta, contratado, pós venda, finalizado]
-
-contrato:
-- finalizado
-
-pós venda:
-- add envio de cartilha;
-- add entrega de resultado
-
-Resumo financeiro:
-- tirar comissão pós venda
-
-
-
 - criar arquivo que faz a análise de tudo recebido, em cima tem um filtro[todos, 
 ultimo ano, mês, dia(o filtro padrão inicial é o Todos)]
 
