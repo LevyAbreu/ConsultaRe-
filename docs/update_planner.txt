@@ -1,5 +1,6 @@
 - criar arquivo que faz a análise de tudo recebido, em cima tem um filtro[todos, 
 ultimo ano, mês, dia(o filtro padrão inicial é o Todos)]
+a
 
 
 
