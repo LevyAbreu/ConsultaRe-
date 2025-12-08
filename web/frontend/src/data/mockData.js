@@ -78,17 +78,17 @@ export const clientes = [
 export const user = [
     {
         id: 1,
-        name: "Arianne",
-        last_name: "Abreu",
-        email: "adm.arianne.abreu@gmail.com",
+        name: "Name",
+        last_name: "Example",
+        email: "email@example.com",
         cellphone: "(11) 99999-9999",
-        password: "Lolzinho123.",
+        password: "Senha123.",
         function: "Consultor Financeiro",
-        enterprise: "Grupo Agora",
-        totaClients: 24,
-        activeClients: 18,
+        enterprise: "Norte",
+        totaClients: 2,
+        activeClients: 2,
         comission: 42000,
-        bio: "Consultora financeira especializada em reestruturação de crédito e análise de rating comercial. Comprometida em ajudar clientes a alcançarem estabilidade financeira.",
+        bio: "Consultor financeira especializada em reestruturação de crédito e análise de rating comercial. Comprometida em ajudar clientes a alcançarem estabilidade financeira.",
         activity: [
             {
                 date: "2025-10-06T10:35:00",
@@ -98,7 +98,7 @@ export const user = [
             {
                 date: "2025-10-05T14:20:00",
                 title: "Novo cliente adicionado",
-                description: "Victor Levy foi adicionado ao sistema"
+                description: "Loren Ipsun foi adicionado ao sistema"
             },
             {
                 date: "2025-10-04T09:15:00",
