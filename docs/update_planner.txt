@@ -1,13 +1,3 @@
-- criar arquivo que faz a análise de tudo recebido, em cima tem um filtro[todos, 
-ultimo ano, mês, dia(o filtro padrão inicial é o Todos)]
-a
-
-
-
-check-list, organograma, planejamento, regras de negócio, requisitos UML[
-    Tabela de casos de uso,
-]
-
 ConsultaRe é um sistema que serve para gerenciar Leads. O usuário insere os dados da consulta 
 do cliente e fica tudo salvo no sistema para ele saber em que etapa do atendimento ele parou 
 para depois retomar na mesma etapa(fase de consulta, fase contratual ou fase de pós venda). 
