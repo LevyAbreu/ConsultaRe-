@@ -172,9 +172,99 @@ function loadSidebarProfile() {
     }
 }
 
+function loadProfileData() {
+    if (user && user[0]) {
+        const userData = user[0];
+        
+        const profileNameEl = document.getElementById('profileName');
+        const profileRoleEl = document.getElementById('profileRole');
+        const profileBioEl = document.getElementById('profileBio');
+        const profileAvatarEl = document.getElementById('profileAvatar');
+        
+        if (profileNameEl) profileNameEl.textContent = `${userData.name} ${userData.last_name}`;
+        if (profileRoleEl) profileRoleEl.textContent = userData.function;
+        if (profileBioEl) profileBioEl.textContent = userData.bio;
+
+        if (profileAvatarEl) {
+            const initials = getInitials(`${userData.name} ${userData.last_name}`);
+            profileAvatarEl.innerHTML = `<span style="font-size: 2rem;">${initials}</span>`;
+            profileAvatarEl.style.display = 'flex';
+            profileAvatarEl.style.alignItems = 'center';
+            profileAvatarEl.style.justifyContent = 'center';
+            profileAvatarEl.style.backgroundColor = 'var(--color-primary)';
+            profileAvatarEl.style.color = 'white';
+        }
+        
+        const totalClientsEl = document.getElementById('totalClients');
+        const activeClientsEl = document.getElementById('activeClients');
+        const totalComissionEl = document.getElementById('totalComission');
+        
+        if (totalClientsEl) totalClientsEl.textContent = userData.totaClients || 0;
+        if (activeClientsEl) activeClientsEl.textContent = userData.activeClients || 0;
+        if (totalComissionEl) totalComissionEl.textContent = `R$ ${userData.comission.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
+
+        const firstNameEl = document.getElementById('firstName');
+        const lastNameEl = document.getElementById('lastName');
+        const emailEl = document.getElementById('email');
+        const phoneEl = document.getElementById('phone');
+        const roleEl = document.getElementById('role');
+        const enterpriseEl = document.getElementById('enterprise');
+        const bioFormEl = document.getElementById('bio');
+        
+        if (firstNameEl) firstNameEl.value = userData.name;
+        if (lastNameEl) lastNameEl.value = userData.last_name;
+        if (emailEl) emailEl.value = userData.email;
+        if (phoneEl) phoneEl.value = userData.cellphone;
+        if (roleEl) roleEl.value = userData.function;
+        if (enterpriseEl) enterpriseEl.value = userData.enterprise;
+        if (bioFormEl) bioFormEl.value = userData.bio;
+
+        const recentActivityEl = document.getElementById('recentActivity');
+        if (recentActivityEl) {
+            recentActivityEl.innerHTML = ''; 
+            
+            userData.activity.forEach(item => {
+                const li = document.createElement('li');
+                li.className = 'activity-item';
+                
+                const dateObj = new Date(item.date);
+                const timeString = dateObj.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+                const dateString = dateObj.toLocaleDateString('pt-BR');
+
+                let iconClass = 'fas fa-cogs'; 
+                if (item.title.includes('cliente')) {
+                    iconClass = 'fas fa-user-plus';
+                } else if (item.title.includes('Perfil')) {
+                    iconClass = 'fas fa-user-edit';
+                } else if (item.title.includes('Serviço concluído')) {
+                    iconClass = 'fas fa-check-circle';
+                } else if (item.title.includes('contato')) {
+                    iconClass = 'fas fa-phone-alt';
+                }
+
+                li.innerHTML = `
+                    <div class="activity-icon">
+                        <i class="${iconClass}"></i>
+                    </div>
+                    <div class="activity-content">
+                        <div class="activity-title">${item.title}</div>
+                        <div class="activity-description">${item.description}</div>
+                    </div>
+                    <div class="activity-time">${dateString} - ${timeString}</div>
+                `;
+                recentActivityEl.appendChild(li);
+            });
+        }
+
+    } else {
+        console.error("Dados do usuário não encontrados.");
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     initializeDOMElements();
     initializeEventListeners();
     loadSidebarProfile();
+    loadProfileData();
     renderClients();
 });

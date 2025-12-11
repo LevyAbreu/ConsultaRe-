@@ -16,7 +16,6 @@
     align-items: center;
 }
 
-/* Sidebar expandido no hover */
 .sidebar:hover {
     width: 250px;
     padding: 1.5rem;
@@ -202,7 +201,6 @@
     box-shadow: var(--shadow);
 }
 
-/* REMOVA O MENU TOGGLE COMPLETAMENTE */
 .menu-toggle {
     display: none;
 }

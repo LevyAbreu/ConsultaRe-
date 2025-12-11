@@ -9,7 +9,6 @@ export function getInitials(name) {
 }
 
 export function showNotification(message, type = 'info') {
-    // Criar elemento de notificação
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
     notification.innerHTML = `
@@ -19,7 +18,6 @@ export function showNotification(message, type = 'info') {
         </div>
     `;
     
-    // Adicionar estilos para a notificação
     notification.style.cssText = `
         position: fixed;
         top: 20px;
@@ -38,12 +36,10 @@ export function showNotification(message, type = 'info') {
     
     document.body.appendChild(notification);
     
-    // Animação de entrada
     setTimeout(() => {
         notification.style.transform = 'translateX(0)';
     }, 100);
     
-    // Remover após 3 segundos
     setTimeout(() => {
         notification.style.transform = 'translateX(100%)';
         setTimeout(() => {

@@ -84,7 +84,7 @@ export const user = [
         cellphone: "(11) 99999-9999",
         password: "Senha123.",
         function: "Consultor Financeiro",
-        enterprise: "Norte",
+        enterprise: "Empresa Exemplo Ltda",
         totaClients: 2,
         activeClients: 2,
         comission: 42000,

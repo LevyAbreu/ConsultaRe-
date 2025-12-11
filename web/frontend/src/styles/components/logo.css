@@ -54,14 +54,12 @@
     opacity: 1;
 }
 
-/* Texto "Consulta" - cor primária do texto */
 .logo-text1 {
     font-weight: 600;
     color: var(--color-text-primary);
     letter-spacing: -0.5px;
 }
 
-/* Texto "Re" - gradiente com a cor primária */
 .logo-text2 {
     font-weight: 800;
     background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
@@ -72,7 +70,6 @@
     position: relative;
 }
 
-/* Efeito de brilho no "Re" */
 .logo-text2::after {
     content: '';
     position: absolute;
@@ -92,7 +89,6 @@
     opacity: 1;
 }
 
-/* Estados do sidebar recolhido */
 .sidebar:not(:hover) .logo {
     justify-content: center;
     padding: 8px;
@@ -117,7 +113,6 @@
     height: 20px;
 }
 
-/* Quando o sidebar expande (hover) */
 .sidebar:hover .logo {
     justify-content: flex-start;
     padding: 8px 12px;
@@ -140,7 +135,6 @@
     height: 24px;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .logo {
         justify-content: flex-start;

@@ -71,7 +71,6 @@
     }
 }
 
-/* Placeholder para inputs */
 input::placeholder,
 textarea::placeholder {
     color: var(--color-text-muted);
@@ -193,14 +192,6 @@ textarea::placeholder {
     margin-top: 25px;
     padding-top: 20px;
     border-top: 1px solid var(--color-border);
-}
-
-.cancel-btn {
-    background: var(--color-btn-secondary);
-}
-
-.cancel-btn:hover {
-    background: #666;
 }
 
 .recent-activity {

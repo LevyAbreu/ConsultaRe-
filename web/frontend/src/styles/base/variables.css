@@ -1,24 +1,19 @@
 :root {
-    /* CORE BRAND COLORS */
     --color-primary: #2ecc71;
     --color-primary-light: #5eea97;
     --color-primary-dark: #239654;
 
-    /* Hover e transparências */
     --color-primary-hover: rgba(46, 204, 113, 0.15);
 
-
-    /* NEUTRALS & BACKGROUNDS */
     --color-bg-main: #000a00;
     --color-bg-soft: #0d170d;
     --color-bg-card: #142214;
-    --color-bg-card-hover: #213421;    /* Cards ao passar o mouse */
+    --color-bg-card-hover: #213421;
 
     --color-bg-sidebar: #121b12;
-    --color-bg-input: #131c13;         /* Inputs */
-    --color-bg-modal: #1a291a;         /* Modal */
+    --color-bg-input: #131c13;
+    --color-bg-modal: #1a291a;
 
-    /* FEEDBACK STATES */
     --color-success: #2ecc71;
     --color-warning: #f1c40f;
     --color-danger: #e74c3c;
@@ -27,7 +22,6 @@
     --color-bg-warning: rgba(241, 196, 15, 0.12);
     --color-bg-danger: rgba(231, 76, 60, 0.12);
 
-    /* TYPOGRAPHY */
     --color-text-primary: #ffffff;
     --color-text-secondary: #d0d0d0;
     --color-text-muted: #8a8a8a;
@@ -36,27 +30,22 @@
     --color-text-warning: #f1c40f;
     --color-text-danger: #e74c3c;
 
-    /* Estado desativado */
     --color-text-disabled: #6f7d6f;
 
-    /* BORDERS & LINES */
     --color-border: #2a2a2a;
     --color-border-light: #3a3a3a;
 
-    /*  BUTTONS */
     --color-btn-primary: var(--color-primary);
     --color-btn-secondary: #5c5c5c;
     --color-btn-success: var(--color-success);
     --color-btn-danger: var(--color-danger);
     --color-btn-hover: rgba(46, 204, 113, 0.20);
 
-    /* EFFECTS */
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
     --shadow-lg: 0 8px 28px rgba(0, 0, 0, 0.28);
 
     --transition: all 0.25s ease;
 
-    /* RADIUS */
     --border-radius: 14px;
     --border-radius-sm: 10px;
 }
